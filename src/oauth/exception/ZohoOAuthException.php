@@ -13,10 +13,10 @@ class ZohoOAuthException extends \Exception
     protected $code = 0;
     
     // User-defined exception code
-    protected $file;
+    protected string $file = ""; // Temporary fix until we upgrade to new SDK - https://help.zoho.com/portal/en/community/topic/type-of-zcrmsdk-crm-exception-zcrmexception-file-must-be-string-as-in-class-exception
     
     // Source filename of exception
-    protected $line;
+    protected int $line; // Temporary fix until we upgrade to new SDK - https://help.zoho.com/portal/en/community/topic/type-of-zcrmsdk-crm-exception-zcrmexception-file-must-be-string-as-in-class-exception
     
     // Source line of exception
     private $trace;
